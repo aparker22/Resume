@@ -1,0 +1,113 @@
+body {
+    background-color: #080708d3;
+    height: 100%;
+ }
+section {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    height: 100%;
+}
+
+.header {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+    background-color:black;
+    padding:15px;
+    margin-bottom:15px;
+}
+.pic {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.myimg {
+    width: 300px;
+    display:block;
+    margin:auto;
+    border-radius: 45%;
+}
+
+.myButton {
+
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+    font-weight:bold;
+    text-align:center;
+	padding:13px 32px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+    margin-top: 15px;
+    width: 100px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.summary {
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    color:#68def3;
+    font-weight: bold;
+    font-size:2em;
+}
+
+p {
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+    font-size:.50em;
+    font-weight:normal;
+    text-align:center;
+	padding:13px 32px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+}
+
+.social {
+    display:inline-block;
+    width: 50%;
+    text-align:center;
+    box-sizing: border-box;
+    padding: 0;
+    position: relative;
+}
+
+.middle {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+
+}
+.skills {
+    background-color:coral;
+    width:50%
+}
+
+.education {
+    background-color:rgb(130, 22, 219);
+    width: 50%;
+}
