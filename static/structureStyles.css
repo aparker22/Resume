@@ -1,0 +1,355 @@
+html, body, .content {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, .content {
+    display: flex;
+}
+
+.content {
+    flex-direction: column;
+    overflow: auto;
+    height: 100%;
+}
+
+.top {
+    width: 100%;
+    min-height: 500px;
+    display: flex; 
+    flex-direction: row;
+    background-color: rgb(243, 237, 237);
+    background-image: url("ashley.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 50%;
+    margin-bottom: 100px;
+}
+
+.top-navbar {
+    background-color: rgba(255, 255, 255, 0.521);
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.top-navbar ul li {
+    margin-right: 50px;
+    font-size: 1.3em; 
+}
+
+.top-summary {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.top-name, .top-buttons {
+    width: 100%;
+}
+
+.top-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.about, .projects, .skills, .contact  {
+    max-width: 100%;
+    display: flex;
+    min-height: 500px;
+    margin-bottom: 100px;
+}
+
+.about {
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding: 30px;
+    min-height: 500px;
+}
+ 
+ .top-name h1 {
+     font-size: 5em;
+     padding: 0;
+     margin: 10px 0 10px 0;
+ }
+ 
+h3 {
+     font-size: 3em;
+     margin: 0;
+     padding: 0;
+ }
+
+ h4 {
+     font-size: 1.3em;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .about-button, .contact-button, .projects-button, .skills-button {
+     appearance: none;
+     width: 30%;
+     height: 40px;
+     margin: 20px 20px 0 0;
+     border: 2px solid black;
+ }
+
+ .about-button {
+     background-color: rgb(243, 237, 237);
+ }
+
+ .about-button:hover {
+     background-color: black;
+     color: rgb(243, 237, 237);
+ }
+
+ .contact-button {
+    background-color: black;
+    color: rgb(243, 237, 237);
+ }
+
+ .title {
+     height: 10%;
+     width: 100%;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .title h3 {
+     font-size: 2em;
+     margin-bottom: 20px;
+ }
+
+ .about-summary {
+    height: 90%;
+    width: 100%;
+    text-align: center;
+ }
+
+ .top-line {
+     width: 30%;
+     border-bottom: solid 1px black;
+     height: 3px;
+     margin-bottom: 10px;
+ }
+
+ .bottom-line {
+     width: 20%;
+     border-bottom: solid 1px black;
+     height: 3px;
+ }
+
+ .about-summary p {
+     font-size: 1.3em;
+ }
+
+ .skills-button {
+    width: 15%;
+ }
+
+ .skills {
+     min-height: 400px;
+ }
+ .skills-div {
+     width: 70%;
+     background-color: rgb(243, 237, 237);
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     padding: 10px 0 10px 0;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .skills-list {
+     width: 100%;
+     height: 100%;
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+
+ .skills-list li {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     height: 33%;
+     width: 25%;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .skills-list li img {
+     max-width: 60%;
+     max-height: 60%;
+ }
+
+ .skills-title {
+     width: 30%;
+     background-color: rgb(235, 228, 228)
+ }
+
+ .skills-title .title {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .projects-button {
+     width: 70%;
+     background-color: rgb(235, 228, 228);
+
+ }
+
+.contact {
+    flex-direction: column;
+    min-height: 600px;
+    background-color: rgb(235, 228, 228);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+ input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: rgb(153, 148, 148);
+    color: rgb(235, 228, 228);
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    margin: 0;
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: rgb(243, 237, 237)
+}
+
+.contact-form {
+    border-radius: 5px;
+    padding: 20px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-form form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-section-input {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+    width: 100%;
+    min-height: 50px;
+    max-height: 50px;
+    display: flex;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    height: 100%;
+}
+
+.social-media-list li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-icon {
+    width: 50%;
+}
+

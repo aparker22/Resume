@@ -1,0 +1,21 @@
+.top {
+    background-color: rgb(253, 238, 241);
+}
+
+.top-photo img {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.top-name h1 {
+    font-size: 3em;
+}
+
+.top-name h3 {
+    font-size: 2em;
+}
+
+.about-button, .contact-button {
+    appearance: none;
+    width: 50%;
+}
