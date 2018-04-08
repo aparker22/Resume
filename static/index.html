@@ -16,13 +16,19 @@
                 </ul>
 
                 <ul class="top-navbar-right">
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>PORTFOLIO</li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#aboutme">ABOUT</a></li>
+                    <li><a href="#skills">PORTFOLIO</a></li>
                     <li>RESUME</li>
-                    <li>MEET ME</li>
+                    <li><a href="#contact">MEET ME</a></li>
                 </ul>
+                <div class="resume-menu">
+                    <ul>
+                        <li><a href="files/resume.pdf" download="ap_resume">DOWNLOAD RESUME</a></li>
+                    </ul>
+                </div>
             </div>
+            <a name="home"></a>
             <div class="top-summary">
                 <div class="top-name">
                     <h3>Hi, I'm</h3>
@@ -30,12 +36,13 @@
                     <h3>Software Developer | Social Worker </h3>
                 </div>
                 <div class="top-buttons">
-                    <button class="about-button">About Me</button>
-                    <button class="contact-button">Contact</button>
+                    <a href="#aboutme"><button class="about-button">About Me</button></a>
+                    <a href="#contact"><button class="contact-button">Contact</button></a>
             </div>
             </div>
         </div>
         <div class="about">
+                <a name="aboutme"></a>
             <div class="title">
                 <h3>My Story</h3>
                 <div class="top-line"></div>
@@ -58,6 +65,7 @@
             </div>
         </div>
         <div class="skills">
+            <a name="skills"></a>
             <div class="skills-div">
                 <ul class="skills-list">
                     <li><img src="skills/JavaScript.png"><p>JavaScript</p></li>
@@ -92,6 +100,7 @@
        </div>
 
        <div class="contact">
+            <a name="contact"></a>
             <div class="title">
                     <h3>Send me a message</h3>
                     <div class="top-line"></div>
@@ -130,5 +139,6 @@
            </ul>
        </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
