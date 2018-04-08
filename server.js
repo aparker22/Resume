@@ -49,7 +49,8 @@ let sendEmail = (req, res) => {
         let emailInformation = JSON.parse(body);
 
         let mailOptions = {
-            from: `${emailInformation.email}`, // sender address
+            from: `codingandcaring@gmail.com`, // sender address
+            replyTo: `${emailInformation.email}`,
             to: 'ashley@codingandcaring.com', // list of receivers
             subject: `${emailInformation.subject}`, // Subject line
             html: `${emailInformation.message}`// plain text body
@@ -57,7 +58,7 @@ let sendEmail = (req, res) => {
         
         transporter.sendMail(mailOptions, function (err, info) {
             if(err)
-                console.log(err)
+                res.end('Unable to send Message')
             else
                 res.end('Message Received')
             });
