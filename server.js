@@ -11,17 +11,6 @@ var transporter = nodemailer.createTransport({
        }
    });
 
-// useful for grabing data out of post requests
-// app.use(bodyParser.urlencoded({
-//     extended: true
-// }));
-
-// /**bodyParser.json(options)
-//  * Parses the text as JSON and exposes the resulting object on req.body.
-//  */
-// app.use(bodyParser.json());
-
-// needed for images css files ect
 app.use(express.static('static'));
  
 app.get('/', function(req, res) {
