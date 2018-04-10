@@ -9,6 +9,13 @@ let addEventListeners = () => {
     mobileMenu.addEventListener('click', openMobileMenu);
 }
 
+
+let openMobileMenu = (e) => {
+    e.preventDefault();
+    let mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenu.classList.toggle('active');
+}
+
 let addDownloadResumeMenu = (e) => {
     let resumeMenu = document.querySelector('.resume-menu');
     resumeMenu.classList.add('active');
@@ -28,12 +35,6 @@ let sendEmail = (e) => {
         method: 'POST', 
         body: JSON.stringify(email),
       })
-}
-
-let openMobileMenu = (e) => {
-    e.preventDefault();
-    let mobileMenu = document.querySelector('.mobile-menu');
-    mobileMenu.classList.toggle('active');
 }
 
 addEventListeners();
