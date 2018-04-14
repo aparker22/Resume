@@ -28,13 +28,14 @@ let sendEmail = (e) => {
     e.preventDefault();
     let form = document.querySelector('body > div > div.contact > div.contact-form > form')
     let email = {email: form.email.value, subject: form.subject.value, message: form.message.value};
-    console.log('Message Sent');
-    console.log(`${window.location}/email`)
     form.reset();
     fetch(`${window.location}/email`, {
         method: 'POST', 
         body: JSON.stringify(email),
-      })
+        headers: new Headers({
+            'Content-type': 'application/json'
+        })
+    })
 }
 
 addEventListeners();

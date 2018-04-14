@@ -131,7 +131,8 @@ a {
 }
 
 .top-navbar-mobile-list li img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 90%;
 }
 
 .top-summary {
@@ -560,4 +561,94 @@ input[type=submit]:hover {
 .social-media-list a img {
     max-width: 100%;
     max-height: 100%;
+}
+
+@media all and (max-width: 1199px) and (min-width: 667px) {
+    .mobile-menu {
+        left: -800px;
+        top: 70px;
+    }
+
+    .mobile-menu.active {
+        top: 70px;
+    }
+
+    .top-navbar-mobile {
+        height: 70px;
+    }
+
+    .top-name h1 {
+        font-size: 5em;
+    }
+
+    .top-name h3 {
+        font-size: 3em;
+    }
+
+    .top {
+        background-size: 80%;
+    }
+
+    .top-buttons a {
+        height: 60px;
+    }
+
+    .top-buttons {
+        position: relative;
+        bottom: 75px;
+        font-size: 1.5em;
+    }
+
+    .mobile-menu {
+        height: 500px;
+        font-size: 1.5em;
+    }
+
+    .title h3 {
+        font-size: 3em;
+    }
+
+    .about-summary p {
+        font-size: 1.7em;
+    }
+
+    .about-summary a {
+        height: 60px;
+        margin-top: 25px;
+        font-size: 1.5em;
+    }
+
+    .featured-project-information {
+        font-size: 1.7em;
+    }
+
+    .featured-project-information a {
+        height: 70px;
+    }
+
+    .technologies li {
+        height: 40px;
+    }
+
+    .technologies li button {
+        font-size: 1.1em;
+    }
+
+    .projects-next-button {
+        height: 60px;
+        font-size: 1.5em;
+    }
+
+    input[type=submit] {
+        height: 60px;
+        font-size: 2.4em;
+        font-family: 'Tajawal', sans-serif;
+        text-align: center;
+        padding: 10px;
+    }
+
+    textarea {
+        height: 400px;
+        font-size: 1.6em;
+    }
 }
