@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css"/>
+    <!-- <link rel="stylesheet" href="bubbles.css"/>
+    <script async type="text/javascript" src="background.js"></script>	 -->
     <title>Ashley Parker's Resume</title>
     <link rel="icon" href="logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,12 +11,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 </head>
 <body>
+    <!-- <canvas id="background"></canvas> -->
     <div class="content">
         <div class="top">
             <div class="top-navbar-mobile">
                 <ul class="top-navbar-mobile-list">
-                    <li><img src="menu.png"></li>
-                    <li><img src="logo.png"></li>
+                    <li><img src="images/menu.png"></li>
+                    <li><img src="images/logo.png"></li>
 
                 </ul>
             </div>
@@ -29,7 +32,7 @@
             </div>
             <div class="top-navbar">
                 <ul class="top-navbar-left">
-                    <li><img src="logo.png"></li>
+                    <li><img src="imageslogo.png"></li>
                 </ul>
 
                 <ul class="top-navbar-right">
@@ -49,16 +52,17 @@
             <div class="top-summary">
                 <div class="top-name">
                     <h1>Ashley R. Parker</h1>
-                    <h3>Software Developer | Social Worker </h3>
+					<h3>Software Developer | Social Worker </h3>
                 </div>
                 <div class="top-buttons">
                     <a href="#aboutme"><button class="about-button">About Me</button></a>
                     <a href="#contact"><button class="contact-button">Contact</button></a>
             </div>
             </div>
-        </div>
+		</div>
+		<a name="aboutme"></a>
         <div class="about">
-                <a name="aboutme"></a>
+
             <div class="title">
                 <h3>My Story</h3>
                 <div class="top-line"></div>
@@ -76,13 +80,20 @@
                     challenges, the daily (hourly!) learning, and the feeling of accomplishment when things work! Although 
                     no longer in the social work field, I remain passionate about working with both individuals and teams 
                     to pursue and meet goals.</p>
-                    <a class="a-buttons" href="#skills"><button class="skills-button">View Portfolio</button></a>
+                    <a class="a-buttons" href="#skills"><button class="skills-button">Portfolio</button></a>
 
             </div>
         </div>
         <div class="skills">
             <a name="skills"></a>
             <div class="skills-div">
+				<div class="skills-title">
+					<div class="title">
+						<h3>My Toolbox</h3>
+						<div class="top-line"></div>
+						<div class="bottom-line"></div>
+					</div>
+				</div>
                 <ul class="skills-list">
                     <li><img src="skills/JavaScript.png"><p>JavaScript</p></li>
                     <li><img src="skills/Html5.png"><p>HTML5</p></li>
@@ -97,15 +108,9 @@
                     <li><img src="skills/aws.png"><p>AWS</p></li>
                     <li><img src="skills/GitHub.png"><p>Git</p></li>
 
-                </ul>
+				</ul>
             </div>
-            <div class="skills-title">
-                <div class="title">
-                    <h3>My Toolbox</h3>
-                    <div class="top-line"></div>
-                    <div class="bottom-line"></div>
-                </div>
-            </div>
+
         </div>
        <div class="projects">
             <div class="title">
@@ -115,58 +120,63 @@
             </div>
             <div class="projects-list">
                 <div class="featured-project">
-                    <h3>cramIT</h3>
+                    <div class="featured-project-information">
+                    <a href="https://github.com/codingandcaring/cramIT"><img src="images/cramit_logo.png"></a>
                     <p>cramIT is an interactive way for software developers to prepare for upcoming interviews.  It features
                         flashcards with various relevant topics, an interactive chat feature for mock interviews, and a list of relevant 
                         job searches.  
+
+                        
                     </p>
                     <ul class="technologies"> 
                         <li><button>HTML/CSS</button></li>
                         <li><button>Node.js</button></li>
                         <li><button>Javascript</button></li>
-                        <li><button>Websocket</button></li>
-                        <li><button>Express</button></li>
-                        <li><button>PostgreSQL</button></li>
                     </ul>
-                    <div class="featured-project-information">
-                        <ul>
+                    <ul class="technologies"> 
+                            <li><button>Websocket</button></li>
+                            <li><button>Express</button></li>
+                            <li><button>PostgreSQL</button></li>
+                        </ul>
+                    </div>
+                    <div class="featured-project-extra">
                             <li><video controls>
                                     <source src="movie.mp4" type="video/mp4">
                                     I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
                                   </video></li>
-                            <li><p data-theme-id="0" data-slug-hash="vRbPVB" data-default-tab="js,result" data-user="codingandcaring" data-embed-version="2" data-pen-title="vRbPVB" class="codepen">See the Pen <a href="https://codepen.io/codingandcaring/pen/vRbPVB/">vRbPVB</a> by Ashley Parker (<a href="https://codepen.io/codingandcaring">@codingandcaring</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-                                <script async src="https://static.codepen.io/assets/embed/ei.js"></script></li>
-                        </ul>
+                            <p data-theme-id="0" data-slug-hash="vRbPVB" data-default-tab="js,result" data-user="codingandcaring" data-embed-version="2" data-pen-title="vRbPVB" class="codepen">See the Pen <a href="https://codepen.io/codingandcaring/pen/vRbPVB/">vRbPVB</a> by Ashley Parker (<a href="https://codepen.io/codingandcaring">@codingandcaring</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
                     </div>
                 </div>
                 <div class="featured-project">
-                        <h3>Impactful</h3>
-                        <p>Impactful connects socially conscious people looking to donate time or money in the metro Atlanta area with reputable charity organizations.  
-                            It allows potential volunteers to search for charities by keyword and uses the Charity Navigator API and Google Maps API to list matching organizations and
-                            view them on the map.
-                        </p>
-                        <ul class="technologies"> 
-                            <li><button>HTML/CSS</button></li>
-                            <li><button>Javascript</button></li>
-                            <li><button>API</button></li>
-                            <li><button>JQuery</button></li>
-                        </ul>
                         <div class="featured-project-information">
-                            <ul>
-                                <li><video controls>
-                                    <source src="impactful.mp4" type="video/mp4">
-                                    I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
-                                    </video>
-                                </li>
-                                <li><p data-theme-id="0" data-slug-hash="QmYogG" data-default-tab="css,result" data-user="codingandcaring" 
+								<a href="https://github.com/codingandcaring/impactful"><img src="images/impactful_logo.png"></a>
+                                <p>Impactful connects socially conscious people looking to donate time or money in the metro Atlanta area with reputable charity organizations.  
+                                    It allows potential volunteers to search for charities by keyword and uses the Charity Navigator API and Google Maps API to list matching organizations and
+                                    view them on the map.
+                                </p>
+                                <ul class="technologies"> 
+                                    <li><button>API</button></li>
+                                    <li><button>JQuery</button></li>
+                                </ul>
+                                <ul class="technologies"> 
+                                        <li><button>API</button></li>
+                                        <li><button>JQuery</button></li>
+                                    </ul>
+                            </div>
+                        <div class="featured-project-extra">
+								<li><video controls>
+										<source src="impactful.mp4" type="video/mp4">
+										I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
+									  </video></li>
+                            <p data-theme-id="0" data-slug-hash="QmYogG" data-default-tab="css,result" data-user="codingandcaring" 
                                     data-embed-version="2" data-pen-title="Impactful" class="codepen">See the Pen <a href="https://codepen.io/codingandcaring/pen/QmYogG/">
                                     Impactful</a> by Ashley Parker (<a href="https://codepen.io/codingandcaring">@codingandcaring</a>) on <a href="https://codepen.io">CodePen</a>.</p></li>
-                            </ul>
                         </div>
 
             </div>
             <div class="projects-next-button">
-                <a href="#contact"><button class="contact-button">Contact</button></a>
+                <a href="#contact"><button class="contact-button">Contact Me</button></a>
             </div>
        </div>
        </div>
@@ -201,9 +211,9 @@
        </div>
        <div class="social-media">
            <ul class="social-media-list">
-                <li><a href="mailto:ashley@codingandcaring.com"><img class="social-media-icon" src="envelope.png"></a></li>
-                <li><a href="https://github.com/codingandcaring"><img class="social-media-icon" src="github_black.png"></a></li>
-                <li><a href="https://www.linkedin.com/in/codingandcaring"><img class="social-media-icon" src="linkedin_black.png"></a></li>
+                <li><a href="mailto:ashley@codingandcaring.com"><img class="social-media-icon" src="images/envelope.png"></a></li>
+                <li><a href="https://github.com/codingandcaring"><img class="social-media-icon" src="images/github_black.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/codingandcaring"><img class="social-media-icon" src="images/linkedin_black.png"></a></li>
                 <!-- <li><a href="https://medium.com/@ashes175"> <img class="social-media-icon" src="medium_black.png"></a></li>                 -->
 
 
