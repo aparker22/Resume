@@ -44,8 +44,110 @@ a {
 
 .top-navbar {
     display: none;
-    height: 10%;
+    height: 55px;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.664);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.top-navbar-left {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+.top-navbar-left li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.top-navbar-left li img {
+    height: 90%;
+}
+
+.top-navbar-right {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 50%;
+}
+
+.top-navbar-right li {
+    margin: 0 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.top-navbar-right li a {
+    color: black;
+    text-decoration: none;
+}
+
+.resume-menu {
+    display: none;
+    background-color: rgb(231, 231, 231);
+    width: 10%;
+    height: 65px;
+    z-index: 1;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 160px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.resume-menu.active {
+    display: flex;
+}
+
+.resume-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.521);
+}
+
+.resume-menu ul li {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume-menu a {
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
 }
 
 .mobile-menu {
@@ -57,13 +159,12 @@ a {
     height: 300px;
     justify-content: space-around;
     align-items: center;
-    left: -400px;
+    left: -1000px;
     top: 50px;
     transition: 1s;
 }
 
 .mobile-menu.active {
-    transition: 1s;
     left: 0;
     top: 50px;
     position: fixed;
@@ -186,8 +287,8 @@ a {
     width: 100%;
     height: 100%;
     background-color: rgb(231, 231, 231);
-    color: rgb(46, 3, 46);
-    border: 2px solid rgb(46, 3, 46);
+    color: rgb(80, 19, 80);
+    border: 2px solid rgb(80, 19, 80);
     font-size: 1.3em;
 }
 
@@ -195,9 +296,9 @@ a {
     -webkit-appearance: none;
     width: 100%;
     height: 100%;
-    background-color: rgb(46, 3, 46);
+    background-color: rgb(80, 19, 80);
     color: rgb(231, 231, 231);
-    border: 2px solid rgb(46, 3, 46);
+    border: 2px solid rgb(80, 19, 80);
     font-size: 1.3em;
 }
 
@@ -262,9 +363,9 @@ a {
     -webkit-appearance: none;
     width: 100%;
     height: 100%;
-    background-color: rgb(46, 3, 46);
+    background-color:rgb(80, 19, 80);
     color: rgb(231, 231, 231);
-    border: 2px solid rgb(46, 3, 46);
+    border: 2px solid rgb(80, 19, 80);
     font-size: 1.1em;
 }
 
@@ -495,7 +596,7 @@ textarea {
     border: 1px solid #ccc; 
     border-radius: 4px; 
     resize: vertical;
-    font-size: 1.3em;
+    font-size: 1.5em;
     vertical-align: middle;
     padding: 10px;
     font-family: 'Tajawal', sans-serif;
@@ -504,8 +605,8 @@ textarea {
 
 input[type=submit] {
     background-color: rgb(231, 231, 231);
-    color: rgb(46, 3, 46);
-    border: 2px solid rgb(46, 3, 46);
+    color: rgb(80, 19, 80);
+    border: 2px solid rgb(80, 19, 80);
     border-radius: 4px;
     width: 50%;
     margin: 20px 10px 0 10px;
@@ -515,13 +616,13 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: rgb(46, 3, 46);
+    background-color: rgb(80, 19, 80);
     color: rgb(231, 231, 231)
 }
 
 .social-media {
     width: 100%;
-    height: 5vh;
+    height: 7vh;
     background-color:white;
     position: relative;
     bottom: 0;
@@ -543,7 +644,7 @@ input[type=submit]:hover {
 }
 
 .social-media-list li {
-    width: 20%;
+    width: 10%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -559,11 +660,11 @@ input[type=submit]:hover {
 }
 
 .social-media-list a img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
 }
 
-@media all and (max-width: 1199px) and (min-width: 667px) {
+@media all and (max-width: 900px) and (min-width: 667px) {
     .mobile-menu {
         left: -800px;
         top: 70px;
@@ -652,3 +753,217 @@ input[type=submit]:hover {
         font-size: 1.6em;
     }
 }
+
+@media all and (max-width: 3000px) and (min-width: 1000px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    .top-navbar-mobile {
+        display: none;
+    }
+
+    .top {
+        background-size: 40%;
+    }
+
+    .top-navbar {
+        display: flex;
+    }
+
+    .top-summary {
+        padding-top: 70px;
+    }
+
+    .top-name {
+        width: 100%;
+        padding-left: 240px;
+    }
+
+    .top-name h1 {
+        font-size: 5em;
+        width: 100%;
+        text-align: left;
+    }
+
+    .top-name h3 {
+        font-size: 3em;
+        width: 100%;
+        text-align: left;
+    }
+
+    .top-buttons {
+        width: 100%;
+        padding-left: 240px;
+        margin-top: 50px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+    }
+
+    .top-buttons a {
+        margin-left: 0;
+        width: 30%;
+        height: 60px;
+    }
+
+    .title h3 {
+        padding-top: 75px;
+    }
+
+    .about {
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .title {
+        width: 50%;
+    }
+
+    .about-summary {
+        height: 80vh;
+        margin-top: 20px;
+    }
+
+    .about-summary p {
+        font-size: 1.25em;
+    }
+
+    .about-summary a {
+        margin-left: 0;
+        width: 30%;
+        height: 60px;
+    }
+
+    .skills {
+        height: 90vh;
+    }
+
+    .skills-div {
+        margin-top: 70px;
+        padding: 0;
+        flex-direction: row;
+    }
+
+    .skills-title {
+        height: 100%;
+        width: 20%;
+        background-color: rgb(80, 19, 80);
+        color: rgb(231, 231, 231);
+    }
+
+    .skills-title .title .top-line {
+        border-color: rgb(231, 231, 231);
+    }
+    .skills-title .title .bottom-line {
+        border-color: rgb(231, 231, 231);
+    }
+
+    .skills-list {
+        width: 80%;
+        height: 100%;
+    }
+
+    .skills-list li img {
+        height: 90%;
+        width: auto;
+    }
+
+    .projects {
+        justify-content: center;
+        align-items: center;
+    }
+    .projects .title {
+        width: 50%;
+    }
+
+    .featured-project-information a {
+        height: 80px;
+    }
+
+    .technologies {
+        height: 40px;
+    }
+
+    .technologies li {
+        height: 40px;
+    }
+
+    .technologies li button {
+        background-color:  rgb(80, 19, 80);
+        color: white;
+        font-size: 1.4em; 
+    }
+
+    .featured-project-extra {
+        flex-direction: row;
+        width: 90%;
+        height: 500px;
+    }
+
+    .featured-project-extra li {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .featured-project-extra li video {
+        max-width: 100%;
+        max-height: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .featured-project-extra li div {
+        max-width: 100%;
+        max-height: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .projects-next-button a {
+        height: 60px;
+        width:30%;
+    }
+
+    .projects-next-button a button {
+        background-color: white;
+        color: rgb(80, 19, 80);
+        border: 2px rgb(80, 19, 80) solid;
+    }
+
+    .contact {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact .title {
+        width: 50%;
+    }
+    .contact .title h3 {
+        padding-top: 90px;
+    }
+
+    textarea {
+        height: 250px;
+    }
+
+    input[type=submit] {
+        width: 30%;
+    }
+
+    .social-media-list li {
+        width: 5%;
+    }
+
+    .social-media-list li img {
+        height: 80%;
+}
+
